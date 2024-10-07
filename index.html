@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>perfect-sense-bed | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper"><!-- start .wrapper -->  
+        <div class="container"><!--start container--> 
+            <div class="center-content">
+                <!-- show output -->
+                <div class="output-area">
+                    <h2>Result = <span id="output"></span></h2>
+                    <h2>Score = <span id="score"></span></h2>
+                </div>
+                <!-- //show output -->
+
+                <form action="#">
+                    <div class="select-area">
+                        <div class="select-option">
+                            <p>Q1. How many people will regularly sleep in the bed?</p>
+                            <select id="sleep_person">
+                                <option value="1">1</option>
+                                <option value="2+">2+</option>
+                            </select> 
+                        </div>
+                        <div class="select-option">
+                            <p>Q2: How old is the oldest person that will regularly sleep in the bed?</p>
+                            <select id="person_age">
+                                <option value="child">Child</option>
+                                <option value="youth">Youth</option>
+                                <option value="adult">Adult</option>
+                                <option value="senior">Senior</option>
+                            </select> 
+                        </div>
+                        <div class="select-option">
+                            <p>Q3: Do you need extra room for overnight visitors (children, pets, etc.)?</p>
+                            <select id="extra_room">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select> 
+                        </div>
+                        <div class="select-option">
+                            <p>Q4: How large is the bedroom where the bed will be placed?</p>
+                            <select id="room_size">
+                                <option value="under_70">Less than 70 sqft</option>
+                                <option value="70_100">70 – 100 sqft</option>
+                                <option value="101_120">101 – 120 sqft</option>
+                                <option value="121+">121+ sqft</option>
+                            </select> 
+                        </div>
+                        <div class="select-option">
+                            <p>Q5: Does anyone who will regularly sleep in the bed toss & turn at night?</p>
+                            <select id="toss_turn">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select> 
+                        </div>
+                        <div class="select-option">
+                            <input type="button" id="result" value="Result">
+                        </div>
+                    </div>
+                </form>
+            </div>                  
+        </div><!-- //end .header-container -->         
+    </div><!-- //end .wrapper -->
+    <script src="js/jquery-min.js"></script> 
+    <script src="js/custom.js"></script> 
+</body>
+</html>
